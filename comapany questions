@@ -1,0 +1,167 @@
+1. what all scripts you have written to automate - why you writen to monitore disk space -don't you have monitoring tools
+2. what type of jobs you have created and which all plugins you used
+3. explain stages of pipeline job
+4. what are build tools you used -explain maven life cycled
+5. build is failing in deployment what could be the reason
+  ANS: check logs
+6. have you worked on boto3
+7. script to take jenkins backup and store it in s3
+8. explain dockerfile
+9. how you check java path and how you update java path
+  ANS:can modify the .bashrc or .bash_profile file
+  export JAVA_HOME=/path/to/java
+  export PATH=$JAVA_HOME/bin:$PATH
+  Temporary Update:
+  export PATH=/path/to/java/bin:$PATH
+
+10. explain modules in ansible and explain playbook to install application
+11. do you have expierence on upgrading and patching, what level of patching and while tool your using and process
+  ANS: yes 1. Application level 2. OS level
+  Configuration Management tools like ansible
+
+12. how frequently your writting terraform template
+  ANS : I write Terraform templates as needed based on project requirements and infrastructure changes. The frequency can vary depending on the project workload 
+
+13. write template to create aws loadbalancer I need working template
+14. what type of application you are working
+15. how many microservices are there
+16. how microservices are deploying onto k8s any terraform template is there and explain yml files
+17. how you are orchestraing k8s environment to environment 
+  ANS: namespace
+18. explain k8s architecture
+19. how you are deleteing pods
+  ANS:kubectl delete pod <pod-name>
+20. how frequently your writing manifest files
+21. how you configured promothus and grafana explain
+22. eks configuration pre-requisites - which process you followed and tell commands you used for creation
+  ANS:eksctl create cluster --name my-cluster --region us-west-2 --node-type t2.medium --nodes 2 --managed
+
+23. have you configured RDS and explain process
+24. have you worked on cost optimizaion project- how you do it
+25. how you are checking vulunaribility 
+26. how you achive multistage docker image
+
+1. What type of cluster your using in your organization? How many cluster your maintaining in your organization
+2. In 10 nodes I want to change 3 nodes as instance type t2 to t3 series. How can I change it ? where I have this option?
+3. Explain how your going to setup & monitor your cluser step by step . Explain each process
+4. What is the command to loggining into pod 
+5. what is exec stands for
+6. How you will allocate the metrix? 
+7. Do you have any check in CICD?
+8. Difference b/w play and playbook
+  ANS: play represents a set of tasks 
+9. Difference b/w resource & module in terraform 
+10. I want to deploy 3 environment(dev,prod,test) using single module, how can I do that, how do you do this configuration?Explain
+11. How you maintain secrets in Terraform what are the options you have
+12. Difference b/w state file & log file
+13. What is Lambda function
+14. In route 53 what are the configurations are there 
+15. What are the rules mention in s3 bucket which rule I need to select for static website
+16. Write a IAM policy for s3 bucket ? What are the actions you will mention in it?
+17. I have created resource using terraform. later I change terraform version  1.3 to 1.5 , I changed this value in all *.tf files. When I do terraform init          	and apply what happens? Weather it will change or if you will get error, what error you will get 
+18. How you configure load balancer using route 53 
+19. what is service account
+20. I have s3 bucket in one region ang KMS in another region? 
+21. How would you set up monitoring and logging using tools like Prometheus, Grafana and set up alerts for abnormal behavior?
+  What are the things you monitor in grafana board 
+22. How you connect 5 vpc ? 
+23. In declerative pipeline I can write groovy script? can you write sample CICD for that?
+24. In ansible I want to execute single task, how can I execute that 
+Write ansible playbook
+25. what is adhoc commands , tell me some adhoc commands
+26. How do you declare variables in ansible, write sample ansible playbook for it
+27. How do you clean up your EC2 instance.
+28. How do you do clean up activity in K8s cluster. what are the things you will do
+29. What is namespace & its uses.
+30. I want to create a namespace and I want to restrict it for 4 persons. Others should not able to login for that namespace. How can I do that?
+what is your roles and responsibility
+Explain in CICD step by step
+Branching strategy 
+which tool you used for logging information in k8s
+How are you seggregating the environment example I have dev,qa, prod. How would you differenciate I want to deploy on to the dev environment.
+In pipeline after CI it is asking for any approval for deploy?
+Explain the process of involved in migration from onpremise to aws?
+Have you worked on Route 53, why it is route 53, why it is not called route 54 or 55?
+what is MX record ? we use A record when we use CNAME record?
+I have 2 EC2 instance running, there is a ALB before that. In this case which record you use to map your request to EC2 instance--> we use CNAME record
+Explain about autoscaling group
+There are 5 ec2 running, let say there are more traffic comming need to increase ec2 instance from 5 to 10. Based on what your ASG comes to know, that it has to increase the number of ec2 instance? 
+what is the configuration we tell ASG to increase EC2 instance
+I have an EC2 instance  running, I stop that ec2 instance and come back after 2 days and start it back , what will happen to the data?
+When you use ALB and NLB?
+what is sidecar?
+ANS: additional container is deployed alongside a primary container within the same pod 
+     A sidecar container can capture logs(collect metrics and monitoring data) generated by the primary container and 
+     send them to monitoring systems like Prometheus.
+
+Consider there is a issue with application, manager ask you to send logs? There are 100s of pods how you take logs of these pods ?which log tool guys are using ? How you share logs to the manager?
+ANS:using grafana,we have to navigate to the relevant dashboard and find which pod is causing it and Use Prometheus queries 
+   or Grafana's built-in querying capabilities to filter logs based on pod names, labels, namespaces, or specific time ranges.
+   Once you've filtered the logs to include only those from the relevant pods, Grafana typically allows you to export logs. export logs for a specific time range and we share with manager using sharepoint or email or teams
+
+I have 5 master node and 10 worker node. My master node crashes what happen to the worker node? what will happen to the running application?
+What are private modules in terraform?
+What is state locking in terraform?
+we have terraform configuration that has no resources, if I execute the terraform apply command what will happen
+there some resources created earlier using some terraform configuration file? If I go the configuration file and modify it I will all resources in the configuration file, now I perform terraform apply command what happens
+Write a sample docker file 
+Write a Deployment yml file?
+Write a jenkin file to login to docker registry and push image to docker registry
+Jenkins server is not running how do fix it, What are the linux commands you use , how do you fix it
+1. have you gone through job description?
+2. introduction
+3. what are all the frenquntly resources you created in terraform
+4. share screen and open notepad - create terraform module of instance and create instance using module
+5. what are the commands you will be using for creating this instance
+6. explain terraform pipeline
+7. how you manage multiple envs
+8. one person created ec2 instance in console, how you manage this instance, importing steps
+9. created ec2 instance with t2.micro but one person from management changed it to t2.medium for some upgarding activity , i don't want this to be detected by terraform is it possible 
+   be default it will detect when we do plan or apply i don't terraform to detect this is there is any option?
+10. how you manage state file? how do you manage creadentials for different envs
+11. what activities you do in k8s
+12. explain about your cluster and application
+13. how you created eks module using terraform
+14. which version of k8s using
+15. I have to deploy 2 applications say app1 and app2 on k8s cluster what are kubernates objects files you will write and explain how routing happens and whre you provide request has to go
+    app1 
+16. write all objects you have worked and explain what purpose you used
+17. did you write manifest file for pod or deployment
+18. how you pass environment varibles to your container
+19. how you created HPA
+20. what is CA
+21. how creats LB?
+22. where you mention path like app1 and app2
+23. i want to access app1, what will be my target and where will you be routing it(where you mention source and destination)
+24. is it possible to run 3 containers in same deployment, where my request goes to i mean which container
+25. in LB which are the target groups
+26. what about DNS, i want to access application using DNS not by LB URL
+27. how you secure K8s
+28. how you are login to cluster using service account or IAM roles
+29. how you secure application
+30. explain CICD
+31. explain helm charts
+32. given below 2 ingress files, how do you convert it into helm file
+33. what are all commands you use in helm
+34. i want to deploy it into dev only how do you pass values related to dev only
+35. how you configure helm
+36. lets say u configured it will helm in CICD for helm install it take 30 minutes what happens to your pipeline will it wait for completion of charts or goes it just say it's 
+    completed? if it waits how long it will wait
+37. how you do rollback of application
+38. explain about Gitlab runners
+39. explain steps of gitlab pipeline
+40. what kind of work you did in gitlab, enhancement work or scrach 
+41. what you understand from sonar report 
+42. what are all vulanariblities you come across
+43. have you used shared library in jenkins and explain it
+44. explain how you create gitlab pipeline
+45. what are all requests you get to create resources in aws
+46. worked on RDS
+47. how to migrate database to aws
+48. i have ec2, postgress and s3 in one region now client wants to migrate to another region how you do it?
+49. worked on lambda services, api gateways
+50. any cost optimazation you have worked and explain 
+51. how you monitor you application
+52. i created new ec2 instance I want to monitor using promethus and grafana how you do it
+53. which tools you used for logging 
+54. worked on splunk or ELK
