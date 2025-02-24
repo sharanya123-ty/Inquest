@@ -1,0 +1,9 @@
+1. Introduce yourself explaining your day to day roles and responsibilities with Devops
+2. What is Modules in terraform ->When there are modules available in registry why did you choose writing custom modules
+3. How memory is managed in python. What is pyspark? Have you worked on pyspark?
+4. What are the things you have worked as part of pandas library. Usage with an example
+5. Have you created EKS cluster in AWS? Explain the steps how do you create eks cluster
+6. How sensitive data is handled in Kubernetes
+7. How was your micro-services organized in kubernetes/containers
+8. Write/brief about a terraform module to provision an infra of your choice
+9. Explain the CI/CD of your project
