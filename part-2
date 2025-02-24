@@ -1,0 +1,20 @@
+1.introduction
+2.tell me aws services you have used
+3.in route53 what is the use of hosted zone and record set
+4.difference b/w A record and quad A
+5.in ec2 instance what is the meaning of instance metadata and userdata and how you going to access them and where you find it 
+  and modify it(someone have given that) you joined lately and   you have to modify it (where does aws stores this data)
+  ANS: instance metadata provides information about the instance itself, 
+      while user data allows to pass custom configuration or initialization instructions to the instance during launch. 
+  cat /var/lib/cloud/instance/user-data.txt
+
+6. write script in python or shell to tag ec2 instance if it's not tagged if it's tagged it has to skip it 
+7. write script in python or shell given port number is open or not open
+8. what is static pod and who maintains
+  ANS:static pods in Kubernetes are managed directly by the kubelet daemon on each node and are typically used for critical system components
+    The maintenance and configuration of static pods are the responsibility of the cluster administrators.
+9. difference b/w secreat and configmap - can we pass secret in configmap 
+10. different types of probes
+11. what is you understanding on various devops matrix
+12. have you worked on platform as service 
+  ANS: Amazon RDS,Amazon DynamoDB,s3,
